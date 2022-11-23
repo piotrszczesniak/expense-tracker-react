@@ -1,0 +1,16 @@
+.title {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    width: 100%;
+    background-color: yellow;
+    z-index: -1;
+  }
+}

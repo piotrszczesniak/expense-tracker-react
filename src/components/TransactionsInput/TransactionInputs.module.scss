@@ -1,0 +1,28 @@
+.transaction-title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.transaction-form {
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .input-text,
+  .input-submit {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    display: block;
+    height: 29px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 1px solid black;
+    outline: none;
+
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+}

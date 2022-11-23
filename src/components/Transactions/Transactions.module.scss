@@ -1,0 +1,32 @@
+.transactions {
+  &-title {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &-item {
+    padding: 0.25rem;
+    margin: 0.25rem 0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+
+    &.cost {
+      border-right: 3px solid red;
+    }
+
+    &.income {
+      border-right: 3px solid green;
+    }
+
+    .currency {
+      font-size: 50%;
+      margin-left: 0.1rem;
+    }
+  }
+}

@@ -8,6 +8,26 @@
     border-bottom: 5px double #eee;
   }
 
+  &-currency {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+    padding-bottom: 0.5rem;
+
+    button {
+      border: 1px dotted #eee;
+      flex-basis: 25%;
+      max-width: 25%;
+      padding: 0.5rem;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
   &-description {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -17,8 +37,8 @@
     font-size: 2rem;
   }
 
-  &-currency {
-    font-size: 1rem;
-    color: rgba(#000000, 0.5);
-  }
+  // &-currency {
+  //   font-size: 1rem;
+  //   color: rgba(#000000, 0.5);
+  // }
 }

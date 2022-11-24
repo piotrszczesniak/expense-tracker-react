@@ -57,9 +57,18 @@ export const TransactionInputs = ({ onTransactionAdded, currency }) => {
         </label>
         <label className={styles.label}>
           Select type of transaction:
-          <select className={styles['input-text']} name='' id=''>
+          <select className={styles['input-text']}>
             <option value='cost'>Cost</option>
             <option value='income'>Income</option>
+          </select>
+        </label>
+        <label className={styles.label}>
+          Select currency of transaction:
+          <select className={styles['input-text']}>
+            <option value='PLN'>PLN</option>
+            <option value='EUR'>EUR</option>
+            <option value='GBP'>GBP</option>
+            <option value='USD'>USD</option>
           </select>
         </label>
         <button className={styles['input-submit']} type='submit'>

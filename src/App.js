@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import styles from './App.module.scss';
 import { Balance } from './components/Balance/Balance';
-import { CurrencySelector } from './components/CurrencySelector/CurrencySelector';
 import { PageTitle } from './components/PageTitle/PageTitle';
 import { TransactionInputs } from './components/TransactionsInput/TransactionInputs';
 import { Transactions } from './components/Transactions/Transactions';
@@ -9,7 +8,7 @@ import { Transactions } from './components/Transactions/Transactions';
 // ! npx json-server --watch data/db.json --port 8000 // run this command in termianl
 
 function App() {
-  const [currency, setCurrency] = useState('PLN');
+  // const [currency, setCurrency] = useState('PLN');
   const [transactions, setTransactions] = useState([]);
 
   const fetchData = useCallback(async () => {
@@ -40,10 +39,10 @@ function App() {
     <div className={styles.App}>
       <PageTitle />
       <main className={styles.main}>
-        <Balance balance={balance} currency={currency} />
-        <Transactions transactions={transactions} currency={currency} />
-        <TransactionInputs onTransactionAdded={handleAddTransaction} currency={currency} />
-        <CurrencySelector onCurrencyChange={setCurrency} currency={currency} />
+        <Balance balance={balance} />
+        <Transactions transactions={transactions} />
+        <TransactionInputs onTransactionAdded={handleAddTransaction} />
+        {/* <CurrencySelector onCurrencyChange={setCurrency} currency={currency} /> */}
       </main>
     </div>
   );

@@ -97,6 +97,20 @@
       "amount": "123",
       "type": "cost",
       "currency": "PLN"
+    },
+    {
+      "id": 1669838576876,
+      "name": "Bateria do zlewu",
+      "amount": "200",
+      "type": "cost",
+      "currency": "PLN"
+    },
+    {
+      "id": 1669838598270,
+      "name": "Flaticon",
+      "amount": "19.99",
+      "type": "cost",
+      "currency": "EUR"
     }
   ]
 }

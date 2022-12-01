@@ -1,27 +1,44 @@
 import React from 'react';
 import styles from './Balance.module.scss';
 
-export const Balance = ({ balance, currency }) => {
+export const Balance = ({ balancePLN, balanceUSD, balanceEUR, balanceGBP, currency, onChange }) => {
+  const handleCurrencyChangeToEUR = (e) => {
+    onChange(e.target.id);
+  };
+  const handleCurrencyChangeToGBP = (e) => {
+    onChange(e.target.id);
+  };
+  const handleCurrencyChangeToPLN = (e) => {
+    onChange(e.target.id);
+  };
+  const handleCurrencyChangeToUSD = (e) => {
+    onChange(e.target.id);
+  };
+
   return (
     <>
       <div className={styles['balance-output']}>
         <div className={styles['balance-currency']}>
-          <button data-button-eur onClick={(e) => console.log(e)}>
+          <button id='EUR' onClick={handleCurrencyChangeToEUR}>
             EUR
           </button>
-          <button data-button-gbp onClick={(e) => console.log(e.target)}>
+          <button id='GBP' onClick={handleCurrencyChangeToGBP}>
             GBP
           </button>
-          <button data-button-pln onClick={(e) => console.log(e.target)}>
+          <button id='PLN' onClick={handleCurrencyChangeToPLN}>
             PLN
           </button>
-          <button data-button-usd onClick={(e) => console.log(e.target)}>
+          <button id='USD' onClick={handleCurrencyChangeToUSD}>
             USD
           </button>
         </div>
-        <span className={styles['balance-description']}>Your balance</span>
-        <span className={styles['balance-amount']}>{balance} </span>
-        {/* <span className={styles['balance-currency']}>{currency}</span> */}
+        <span className={styles['balance-description']}>
+          Your balance in <strong>{currency}</strong>
+        </span>
+        {currency === 'PLN' && <span className={styles['balance-amount']}>{balancePLN}</span>}
+        {currency === 'EUR' && <span className={styles['balance-amount']}>{balanceEUR}</span>}
+        {currency === 'GBP' && <span className={styles['balance-amount']}>{balanceGBP}</span>}
+        {currency === 'USD' && <span className={styles['balance-amount']}>{balanceUSD}</span>}
       </div>
     </>
   );

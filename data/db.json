@@ -50,27 +50,6 @@
       "currency": "PLN"
     },
     {
-      "id": 1669228181398,
-      "name": "wine",
-      "amount": "3.5",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
-      "id": 1669228694632,
-      "name": "sweets",
-      "amount": "20",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
-      "id": 1669228791522,
-      "name": "snickers",
-      "amount": "2.5",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
       "id": 1669228932581,
       "name": "nike shoes",
       "amount": "299",
@@ -85,32 +64,32 @@
       "currency": "PLN"
     },
     {
-      "id": 1669231164017,
-      "name": "belt",
-      "amount": "100",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
-      "id": 1669235833478,
-      "name": "toys",
-      "amount": "123",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
-      "id": 1669838576876,
-      "name": "Bateria do zlewu",
-      "amount": "200",
-      "type": "cost",
-      "currency": "PLN"
-    },
-    {
       "id": 1669838598270,
       "name": "Flaticon",
       "amount": "19.99",
       "type": "cost",
       "currency": "EUR"
+    },
+    {
+      "id": 1669927739380,
+      "name": "bread",
+      "amount": "10",
+      "type": "cost",
+      "currency": "PLN"
+    },
+    {
+      "id": 1669927756037,
+      "name": "pizza",
+      "amount": "5",
+      "type": "cost",
+      "currency": "GBP"
+    },
+    {
+      "id": 1669930658044,
+      "name": "Freelancing",
+      "amount": "49",
+      "type": "income",
+      "currency": "GBP"
     }
   ]
 }

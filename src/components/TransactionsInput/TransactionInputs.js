@@ -32,21 +32,6 @@ export const TransactionInputs = ({ onTransactionAdded }) => {
     } catch (error) {
       console.log(error);
     }
-
-    // setHistory([
-    //   ...history,
-    //   {
-    //     id: new Date().getTime(), //! TODO: read --> library for id generation uuid
-    //     name: e.target[0].value,
-    //     amount: e.target[1].value,
-    //     type: e.target[2].value,
-    //   },
-    // ]);
-
-    // e.target[1].value = ''
-    // TODO:
-    // react-hook-forms
-    // formik
   };
 
   const handleNameChange = (e) => {
@@ -71,7 +56,7 @@ export const TransactionInputs = ({ onTransactionAdded }) => {
 
       <form className={styles['transaction-form']} onSubmit={handleSubmit}>
         <label className={styles['label']}>
-          Enter name of transaction: {transaction.name}
+          Enter name of transaction:
           <input
             className={styles['input-text']}
             required
@@ -116,3 +101,9 @@ export const TransactionInputs = ({ onTransactionAdded }) => {
     </section>
   );
 };
+
+//! TODO: read --> library for id generation uuid
+// e.target[1].value = ''
+// TODO:
+// react-hook-forms
+// formik

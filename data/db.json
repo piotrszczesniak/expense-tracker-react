@@ -90,6 +90,27 @@
       "amount": "49",
       "type": "income",
       "currency": "GBP"
+    },
+    {
+      "id": 1669931021425,
+      "name": "Netflix subscription",
+      "amount": "9",
+      "type": "cost",
+      "currency": "USD"
+    },
+    {
+      "id": 1672093900740,
+      "name": "netflix",
+      "amount": "29",
+      "type": "cost",
+      "currency": "PLN"
+    },
+    {
+      "id": 1672093922139,
+      "name": "shoes",
+      "amount": "500",
+      "type": "cost",
+      "currency": "USD"
     }
   ]
 }

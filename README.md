@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Initially I built it in pure React but just recently I added TypeScript.
+
 Also JSONserver is available as a small backend. Run it in your terminal:
 
 ### `npx json-server --watch data/db.json --port 8000`

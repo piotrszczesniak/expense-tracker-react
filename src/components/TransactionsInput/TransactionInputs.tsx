@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { Data } from '../../types/types';
 import styles from './TransactionInputs.module.scss';
 
-export const TransactionInputs = ({ onTransactionAdded }) => {
+type TransactionInputsProps = {
+  onTransactionAdded: (data: Data) => void;
+};
+
+export const TransactionInputs = ({ onTransactionAdded }: TransactionInputsProps) => {
   const [transaction, setTransaction] = useState({
     id: '',
     name: '',
@@ -10,7 +15,7 @@ export const TransactionInputs = ({ onTransactionAdded }) => {
     currency: 'PLN',
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
@@ -34,19 +39,19 @@ export const TransactionInputs = ({ onTransactionAdded }) => {
     }
   };
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTransaction((transaction) => ({ ...transaction, name: e.target.value }));
   };
 
-  const handleAmountChange = (e) => {
+  const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTransaction((transaction) => ({ ...transaction, amount: e.target.value }));
   };
 
-  const handleTypeChange = (e) => {
+  const handleTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setTransaction((transaction) => ({ ...transaction, type: e.target.value }));
   };
 
-  const handleCurrencyChange = (e) => {
+  const handleCurrencyChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setTransaction((transation) => ({ ...transation, currency: e.target.value }));
   };
 

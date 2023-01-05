@@ -2,8 +2,8 @@ export type Data = {
   id: number;
   name: string;
   amount: number;
-  type: TransactionType.COST | TransactionType.INCOME;
-  currency: TransactionCurrency.PLN | TransactionCurrency.USD | TransactionCurrency.GBP | TransactionCurrency.EUR;
+  type: TransactionType;
+  currency: TransactionCurrency;
 };
 
 export enum TransactionType {
@@ -12,8 +12,8 @@ export enum TransactionType {
 }
 
 export enum TransactionCurrency {
-  EUR = 'eur',
-  GBP = 'gbp',
-  USD = 'usd',
-  PLN = 'pln',
+  EUR = 'EUR',
+  GBP = 'GBP',
+  USD = 'USD',
+  PLN = 'PLN',
 }

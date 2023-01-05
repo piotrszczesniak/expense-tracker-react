@@ -11,7 +11,7 @@ import { Data, TransactionCurrency, TransactionType } from './types/types';
 // * useMemo remeber what callback returns
 
 function App() {
-  const [currency, setCurrency] = useState(TransactionCurrency.PLN);
+  const [currency, setCurrency] = useState<TransactionCurrency>(TransactionCurrency.PLN);
   const [transactions, setTransactions] = useState<Data[]>([]);
 
   const fetchData = useCallback(async () => {

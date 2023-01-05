@@ -1,8 +1,14 @@
 import React from 'react';
 import styles from './Transactions.module.scss';
 import classNames from 'classnames';
+import { Data, TransactionCurrency, TransactionType } from '../../types/types';
 
-export const Transactions = ({ transactions, currency }) => {
+type TransactionsProps = {
+  transactions: Data[];
+  currency: TransactionCurrency;
+};
+
+export const Transactions = ({ transactions, currency }: TransactionsProps) => {
   return (
     <section className={styles['transactions']}>
       <h3 className={styles['transactions-title']}>History of oprations in {currency}</h3>
@@ -13,8 +19,8 @@ export const Transactions = ({ transactions, currency }) => {
             <li
               className={classNames(
                 styles['transactions-item'],
-                { [styles.cost]: type === 'cost' },
-                { [styles.income]: type === 'income' }
+                { [styles.cost]: type === TransactionType.COST },
+                { [styles.income]: type === TransactionType.INCOME }
               )}
               key={id}
             >
